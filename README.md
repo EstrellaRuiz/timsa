@@ -1,7 +1,7 @@
 # timsa
 
 Módulo de comunicaciones para el envio de Notificaciones por SMS y/o FAX.
-
+Las notificaciones podrán estar en Estado: Enviada o Error (no se ha podido enviar)
 
 Arrancar el proyecto:
 
@@ -33,4 +33,15 @@ curl -X GET --header 'Accept: application/json' 'http://localhost:8080/notificac
 Envio de Notificación por FAX:
 ------------------------------
 curl -X GET --header 'Accept: application/json' 'http://localhost:8080/notificaciones/v0/notificaciones/fax?remitente=Manolo%20y%20Cia&destinatario=910000000&mensaje=La%20obra%20comenzar%C3%A1%20pronto'
+
+Respuesta:
+{
+  "idNotificacion": 2,
+  "mensaje": "La_obra_comenzará_pronto",
+  "de": "Manolo y Cia",
+  "para": "910000000",
+  "estado": "Enviada",
+  "tipo": "FAX",
+  "fechaEnvio": "2018-08-14 07:08:00"
+}
 
