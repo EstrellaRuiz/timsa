@@ -1,7 +1,8 @@
 # timsa
 
 Módulo de comunicaciones para el envio de Notificaciones por SMS y/o FAX.
-Las notificaciones podrán estar en Estado: Enviada o Error (no se ha podido enviar)
+
+Las notificaciones se almacenarán en H2 podrán estar en Estado: Enviada o Error (no se ha podido enviar)
 
 Arrancar el proyecto:
 
